@@ -1,13 +1,14 @@
-Description=Intel CS video-agent
+[Unit]
+Description=Intel CS audio-agent
 After=syslog.target network.target
 [Service]
 Type=forking
-PIDFile=/opt/intelcs/production/logs/video-agent.pid
+PIDFile=/opt/intelcs/production/logs/audio-agent.pid
 User=root
 Group=root
 WorkingDirectory=/opt/intelcs/production
-ExecStart=/opt/intelcs/production/bin/daemon.sh start video-agent
-ExecStop=/opt/intelcs/production/bin/daemon.sh stop video-agent
+ExecStart=/opt/intelcs/production/bin/daemon.sh start audio-agent
+ExecStop=/opt/intelcs/production/bin/daemon.sh stop audio-agent
 Restart=always
 LimitFSIZE=infinity
 LimitCPU=infinity
