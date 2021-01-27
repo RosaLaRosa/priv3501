@@ -1,0 +1,19 @@
+Description=Intel CS video-agent
+After=syslog.target network.target
+[Service]
+Type=forking
+PIDFile=/opt/intelcs/production/logs/video-agent.pid
+User=root
+Group=root
+WorkingDirectory=/opt/intelcs/production
+ExecStart=/opt/intelcs/production/bin/daemon.sh start video-agent
+ExecStop=/opt/intelcs/production/bin/daemon.sh stop video-agent
+Restart=always
+LimitFSIZE=infinity
+LimitCPU=infinity
+LimitAS=infinity
+LimitMEMLOCK=infinityex
+LimitNOFILE=64000
+LimitNPROC=64000
+[Install]
+WantedBy=multi-user.target
