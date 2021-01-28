@@ -1,0 +1,6 @@
+#!/bin/bash
+systemctl start intelcs-streaming-agent.service -n 0 --no-pager
+systemctl start intelcs-conference-agent.service -n 0 --no-pager
+systemctl start intelcs-audio-agent.service -n 0 --no-pager
+systemctl start intelcs-video-agent.service -n 0 --no-pager
+systemctl start intelcs-recording-agent.service -n 0 --no-pager

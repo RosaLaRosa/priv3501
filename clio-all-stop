@@ -1,0 +1,6 @@
+#!/bin/bash
+systemctl stop intelcs-streaming-agent.service -n 0 --no-pager
+systemctl stop intelcs-conference-agent.service -n 0 --no-pager
+systemctl stop intelcs-audio-agent.service -n 0 --no-pager
+systemctl stop intelcs-video-agent.service -n 0 --no-pager
+systemctl stop intelcs-recording-agent.service -n 0 --no-pager

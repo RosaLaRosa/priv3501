@@ -1,0 +1,7 @@
+#!/bin/bash
+systemctl status intelcs-streaming-agent.service -n 0 --no-pager
+systemctl status intelcs-conference-agent.service -n 0 --no-pager
+systemctl status intelcs-audio-agent.service -n 0 --no-pager
+systemctl status intelcs-video-agent.service -n 0 --no-pager
+systemctl status rpcbind.service -n 0 --no-pager
+systemctl status intelcs-recording-agent.service -n 0 --no-pager
